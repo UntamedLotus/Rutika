@@ -1,152 +1,159 @@
 :root {
-  --primary: #a5d7e9;
+	--primary: #a5d7e9;
 
-  /* shades */
-  --shade-10: #95c2d2;
-  --shade-20: #84acba;
-  --shade-30: #7397a3;
-  --shade-40: #63818c;
-  --shade-50: #536c75;
-  --shade-60: #42565d;
-  --shade-70: #314046;
-  --shade-80: #212b2f;
-  --shade-90: #101517;
+	/* shades */
+	--shade-10: #95c2d2;
+	--shade-20: #84acba;
+	--shade-30: #7397a3;
+	--shade-40: #63818c;
+	--shade-50: #536c75;
+	--shade-60: #42565d;
+	--shade-70: #314046;
+	--shade-80: #212b2f;
+	--shade-90: #101517;
 
-  /* Tints */
-  --tint-10: #aedbeb;
-  --tint-20: #b7dfed;
-  --tint-30: #c0e3f0;
-  --tint-40: #c9e7f2;
-  --tint-50: #d2ebf4;
-  --tint-60: #dbeff6;
-  --tint-70: #e4f3f8;
-  --tint-80: #edf7fb;
-  --tint-90: #f6fbfd;
+	/* Tints */
+	--tint-10: #aedbeb;
+	--tint-20: #b7dfed;
+	--tint-30: #c0e3f0;
+	--tint-40: #c9e7f2;
+	--tint-50: #d2ebf4;
+	--tint-60: #dbeff6;
+	--tint-70: #e4f3f8;
+	--tint-80: #edf7fb;
+	--tint-90: #f6fbfd;
 }
 
 main {
-  max-width: 120rem;
-  padding: 0 3.2rem;
-  margin: 0 auto;
+	max-width: 120rem;
+	padding: 0 3.2rem;
+	margin: 0 auto;
 }
 
 .grid {
-  display: grid;
-  column-gap: 3.2rem;
-  row-gap: 9.6rem;
+	display: grid;
+	column-gap: 3.2rem;
+	row-gap: 9.6rem;
 }
 
 .grid--2-cols {
-  grid-template-columns: repeat(2, 1fr);
+	grid-template-columns: repeat(2, 1fr);
 }
 
 .grid--3-cols {
-  grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: 49% 2% 49%;
 }
 
 .grid--5-cols {
-  grid-template-columns: repeat(5, 1fr);
+	grid-template-columns: repeat(5, 1fr);
 }
 
 .intro-basic {
-  margin: 5rem;
+	margin: 3rem;
 }
 
 .name {
-  font-size: 3rem;
-  font-weight: 400;
-  line-height: 1.5;
-  letter-spacing: 0.5px;
-  text-align: center;
+	font-size: 3rem;
+	font-weight: 400;
+	line-height: 1.5;
+	letter-spacing: 0.5px;
+	text-align: center;
 }
 
 .neon {
-  color: #ccf1ff;
-  text-shadow: 0 0 2px #ccf1ff, 0 0 3px #ccf1ff, 0 0 5px #ccf1ff,
-    0 0 40px #50cefc, 0 0 80px #50cefc, 0 0 90px #50cefc, 0 0 100px #50cefc,
-    0 0 150px #50cefc;
+	color: #ccf1ff;
+	text-shadow: 0 0 2px #ccf1ff, 0 0 3px #ccf1ff, 0 0 5px #ccf1ff,
+		0 0 40px #50cefc, 0 0 80px #50cefc, 0 0 90px #50cefc, 0 0 100px #50cefc,
+		0 0 150px #50cefc;
 }
 
 .main-intro {
-  font-size: 1rem;
-  font-weight: 300;
-  line-height: 1.5;
-  letter-spacing: 1.7px;
-  text-align: center;
-  color: var(--tint-10);
+	font-size: 1rem;
+	font-weight: 300;
+	line-height: 1.5;
+	letter-spacing: 1.7px;
+	text-align: center;
+	color: var(--tint-10);
 }
 
 .contacts {
-  width: 25rem;
-  margin: 5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
+	width: 25rem;
+	margin: 5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.line-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-items: center;
 }
 
 .vl {
-  border-left: 3px solid #7aa3a3;
-  height: 500px;
+	border-left: 3px solid #7aa3a3;
+	height: 550px;
 }
 
 .contact-list {
-  list-style: none;
-  display: flex;
-  column-gap: 35px;
-  padding-left: 0;
+	list-style: none;
+	display: flex;
+	column-gap: 35px;
+	padding-left: 0;
 }
 
 .social-list {
-  list-style: none;
-  padding-left: 0;
-  font-size: 1.7rem;
+	list-style: none;
+	padding-left: 0;
+	font-size: 1.7rem;
 }
 
 .social-list a {
-  color: var(--shade-20);
+	color: var(--shade-20);
 }
 
 .social-list a:hover {
-  color: var(--tint-10);
+	color: var(--tint-10);
 }
 
 .para-base {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .para {
-  text-align: center;
-  margin-bottom: 35px;
-  color: var(--shade-20);
-  font-size: 2.1rem;
-  text-decoration: underline;
-  text-decoration-color: var(--shade-20);
-  text-shadow: 1px 1px 2px #212b2f, 0 0 1em rgb(52, 52, 253),
-    0 0 0.2em rgb(52, 52, 253);
+	text-align: center;
+	margin-bottom: 35px;
+	color: var(--shade-20);
+	font-size: 2.1rem;
+	text-decoration: underline;
+	text-decoration-color: var(--shade-20);
+	text-shadow: 1px 1px 2px #212b2f, 0 0 1em rgb(52, 52, 253),
+		0 0 0.2em rgb(52, 52, 253);
 }
 
 .cafe-icon {
-  color: var(--shade-20);
-  font-size: 2.5rem;
-  margin-right: 10px;
-  margin-top: 5px;
+	color: var(--shade-20);
+	font-size: 2.5rem;
+	margin-right: 10px;
+	margin-top: 5px;
 }
 
 .contact-list a {
-  color: var(--shade-20);
-  text-decoration: none;
+	color: var(--shade-20);
+	text-decoration: none;
 }
 
 .icon {
-  color: var(--shade-20);
-  font-size: 1rem;
-  margin-top: 2px;
+	color: var(--shade-20);
+	font-size: 1rem;
+	margin-top: 2px;
 }
 
 .main-list {
-  display: flex;
-  column-gap: 10px;
+	display: flex;
+	column-gap: 10px;
 }
