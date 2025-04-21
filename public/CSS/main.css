@@ -157,3 +157,117 @@ main {
 	display: flex;
 	column-gap: 10px;
 }
+
+/* ===================
+   Responsive Styling
+=================== */
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+	.grid--3-cols {
+		grid-template-columns: 1fr;
+		row-gap: 4rem;
+		text-align: center;
+	}
+
+	.vl {
+		display: none; /* Hide vertical line on smaller screens */
+	}
+
+	.contacts {
+		width: 100%;
+		margin: 2rem 0;
+	}
+
+	.contact-list {
+		flex-direction: column;
+		row-gap: 1.5rem;
+		align-items: center;
+	}
+
+	.social-list {
+		grid-template-columns: repeat(3, 1fr);
+		gap: 1rem;
+		justify-items: center;
+	}
+
+	.para {
+		font-size: 1.7rem;
+	}
+
+	.name {
+		font-size: 2.5rem;
+	}
+
+	.main-intro {
+		font-size: 1rem;
+		padding: 0 1rem;
+	}
+}
+
+/* Mobile Devices (480px and below) */
+@media (max-width: 480px) {
+	main {
+		padding: 0 1.5rem;
+	}
+
+	.contacts {
+		margin: 1rem 0;
+	}
+
+	.social-list {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	.para {
+		font-size: 1.5rem;
+	}
+
+	.name {
+		font-size: 2rem;
+	}
+
+	.main-intro {
+		font-size: 0.95rem;
+		line-height: 1.6;
+	}
+
+	.social-list.grid {
+		gap: 1.5rem;
+		justify-items: center;
+	}
+}
+
+/* Ultra-Wide / 4K screens (2560px and above) */
+@media (min-width: 2560px) {
+	main {
+		max-width: 160rem; /* About 2560px */
+	}
+
+	.name {
+		font-size: 4rem;
+	}
+
+	.main-intro {
+		font-size: 1.3rem;
+	}
+
+	.contacts {
+		width: 30rem;
+	}
+
+	.para {
+		font-size: 2.5rem;
+	}
+
+	.social-list {
+		font-size: 2.2rem;
+	}
+
+	.name {
+		font-size: clamp(2rem, 3vw, 4rem);
+	}
+	.main-intro {
+		font-size: clamp(1rem, 1.5vw, 1.3rem);
+	}
+}
